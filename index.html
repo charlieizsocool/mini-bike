@@ -1,40 +1,100 @@
-<p>
-  <a href="https://ibb.co/KcrR0hRY">
-    <img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/JWs0Bt0N/New-Project.png" alt="New-Project" width="302" height="151" border="0" />
-  </a>
-</p>
-<hr />
-<p>&nbsp;</p>
-<h4 style="text-align: center;">Get a quote today!</h4>
+<style>
+  /* Basic styles for the body to improve font and background */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                   Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Add some space around the edges */
+  }
 
-<form action="https://formspree.io/f/xyzbojyv" method="POST">
-  
-  <div style="margin-bottom: 15px;">
-    <label for="form-email">Your email:</label><br>
-    <input 
-      id="form-email"
-      type="email" 
-      name="email" 
-      placeholder="you@example.com"
-      required 
-      style="width: 100%; box-sizing: border-box;" 
-    />
-  </div>
+  /* A container to center the content and give it a "card" look */
+  .quote-container {
+    max-width: 550px; /* Constrains the width on large screens */
+    margin: 20px auto; /* Centers the container */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
 
-  <div style="margin-bottom: 15px;">
-    <label for="form-message">Your message:</label><br>
-    <textarea 
-      id="form-message"
-      name="message" 
-      placeholder="Tell us about your project..."
-      required
-      rows="6"
-      style="width: 100%; box-sizing: border-box;"
-    ></textarea>
-  </div>
+  /* Style for the logo image */
+  .logo-image {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image */
+    max-width: 100%; /* Make sure it's responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
 
-  <div>
-    <button type="submit">Send</button>
-  </div>
-  
-</form>
+  /* Style for the heading */
+  .quote-container h4 {
+    text-align: center;
+    font-size: 1.6rem; /* Make it larger and more modern */
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  /* Style for the horizontal rule */
+  .quote-container hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-bottom: 25px;
+  }
+
+  /* A wrapper for form fields for consistent spacing */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block; /* Put the label on its own line */
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  /* A single class for both text inputs and textareas */
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  /* Add a nice focus effect */
+  .form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+
+  /* Style the submit button */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #007bff; /* A standard blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  /* Add a hover effect for the button */
+  .btn-submit:hover {
+    background-color: #0056b3; /* A darker blue */
+  }
+</style>
+
+
+<div class="quote-container">
+  <p>
+    <a href="https://ibb.co/KcrR0hRY">
+      <img class
